@@ -7,6 +7,7 @@ export default defineConfig(() => {
   return {
     base: process.env.GITHUB_PAGES ? '/ATCW-Plan/' : '/',
     plugins: [react(), tailwindcss()],
+    base: '/ATCW-Plan/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
